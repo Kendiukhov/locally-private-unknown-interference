@@ -1,0 +1,131 @@
+{
+  "configuration": {
+    "benchmark": {
+      "cluster_count": 200,
+      "cluster_size": 8,
+      "epsilons": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "experiment_seed": 2001,
+      "population_seed": 1001,
+      "replications": 800,
+      "scenario": "complex"
+    },
+    "design": {
+      "arm_probability": 0.5,
+      "p_high": 0.8,
+      "p_low": 0.2
+    },
+    "doi_sieve": {
+      "cluster_count": 200,
+      "cluster_size": 8,
+      "epsilons": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "experiment_seed": 2004,
+      "integration_draws": 16,
+      "penalty": 0.05,
+      "population_seed": 1001,
+      "replications": 150,
+      "scenario": "complex"
+    },
+    "exposure_overlap": {
+      "degrees": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "epsilons": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "experiment_seed": 2005,
+      "peer_treatment_probability": 0.5,
+      "replications": 2000,
+      "sample_size": 100000,
+      "target_mean": 0.6
+    },
+    "interference_scaling": {
+      "cluster_sizes": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "epsilons": [
+        0.5,
+        1.0,
+        4.0
+      ],
+      "experiment_seed": 2003,
+      "population_seed": 1003,
+      "replications": 400,
+      "sample_size": 1600,
+      "scenario": "linear"
+    },
+    "sample_size_scaling": {
+      "cluster_counts": [
+        50,
+        100,
+        200,
+        400
+      ],
+      "cluster_size": 8,
+      "epsilons": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "experiment_seed": 2002,
+      "population_seed": 1002,
+      "replications": 400,
+      "scenario": "linear"
+    }
+  },
+  "matplotlib": "3.10.8",
+  "numpy": "1.26.4",
+  "pandas": "2.3.3",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:34:54) [Clang 16.0.6 ]",
+  "quick": false,
+  "scipy": "1.16.3",
+  "skip_doi": false,
+  "source_manifest": {
+    "Makefile": "b0015a6a04e1eaad85eabac7b8bb0b4f1710811edf276d51460212a82a86985a",
+    "configs/experiments.json": "02253566cea0bfff9fe62c25ab4a08209a96a24a51c48e96326d1651407f5df1",
+    "pyproject.toml": "98a56153058390bceee0192ce1249743e2a6add348b3ca0a2b50eb6444ca77ff",
+    "requirements-lock.txt": "5195b8ed5054eb14848ecb55f2741cd8a48f6ce79108ba20b3551fcfbdd9c7d9",
+    "scripts/finalize_results.py": "15a012c677d2713f4a822a010881e650a4f1261ed4d997e8c35a5b68e801495a",
+    "scripts/make_figures.py": "713a01af352b4a5029fad11978530fda0221b2df0d1768246e192c401d834351",
+    "scripts/make_tables.py": "c31a545c4f1509d743c4c78783bc032a597c6585182308c1acdb71ae7f2e2e14",
+    "scripts/run_doi_experiment.py": "6fd89554b65b004af568debf3814767964d64961c65f3cc5d459c972c82fc245",
+    "scripts/run_experiments.py": "004e2352ea7ca060444da86908f6fa56c05f0b1a9d209f484b2bf219a6ed8cad",
+    "scripts/run_overlap_experiment.py": "14d565ab475443cda06c61829f3b4b3eb1403e7362f2cb794c0bb7a283bdc3f1",
+    "scripts/verify_artifact.py": "5db5679745b5c2ee8ca9deba380b30abb8ee0763e906497fde51216a2b56d7e1",
+    "src/lpui/__init__.py": "cad64f8f0bd0eaaaa1e637cb41a356b58e2927a60bbca082df31eb6e1aa13d2f",
+    "src/lpui/design.py": "b11d734fc440986a70493e5d234ef2378d525a3ac389991bc5ed39653877fe99",
+    "src/lpui/dgp.py": "e3cba93101c08549665dcd9ff86c143745576e77d7484bba83eb4e3a49154e78",
+    "src/lpui/doi_model.py": "dedfc4a8293a5ba8cc60a73c5e181d710aa27bb7bd069560fb6d61f0a18821c4",
+    "src/lpui/estimators.py": "fb2dd506a52161409bdbdf33246d72421e680e80f0c3725b188c5faa3b7c43e3",
+    "src/lpui/mechanisms.py": "689eb21d0b06cdf14aa84e04da8755bafb97bbb26a30c27dee71ba85261f82fe",
+    "src/lpui/reproducibility.py": "559a1010edf372484109730a43da6df8e8286177f96d1b9008b849cf4b84df5d",
+    "src/lpui/simulation.py": "cf8de47f3347ae145483f17a17db20ef1b9b16883cf49f50d89a07ea7c2ffc33",
+    "src/lpui/theory.py": "06cb435fa3ca60d35c318e0561b8ba356257a28defbd7fc869a80fd15757cc50",
+    "tests/test_dgp.py": "a61677cee482b8e31b0851f982f2a53980fa6a54b2736b38b06d783a4da8fcef",
+    "tests/test_doi_model.py": "1f39dd84ba39f9f85da15bbd1af2e135a90dc30834ce92cb1d6aba3ce5f3df21",
+    "tests/test_estimators.py": "df2e9222d164a2d3f3361bb2162e2ef985d33ccb9e0a5caee8c561f56609ec14",
+    "tests/test_mechanisms.py": "243d29c9708cfbb51127b21554abac9f32f38d304a1146821467e6412a433a0e",
+    "tests/test_simulation.py": "6ac0ea39804f51f096c85db08434847af462fe9d0732483490157780cd9d8f00",
+    "tests/test_theory.py": "4e1db34cf23cad81c71293460bed1f6bb6b996af1439cdec5ee87734e68d6b61"
+  }
+}

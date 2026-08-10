@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the accompanying anonymous manuscript."
+title: "Locally Private Causal Inference with Unknown Within-Block Interference"
+type: software
+authors:
+  - family-names: "Authors"
+    given-names: "Anonymous"
+version: 1.0.0
+date-released: 2026-08-10
+license: MIT

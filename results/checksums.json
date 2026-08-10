@@ -1,0 +1,12 @@
+{
+  "raw/benchmark.csv": "54968ec01464f9fabe0d18aa42fc9fa912b3bd5d36c24c17201d4add125c0037",
+  "raw/doi_sieve.csv": "7c542fcc35bcc4335e02ff0afaee8e41abb6ee39fc39a13a7b65362dace1c387",
+  "raw/exposure_overlap.csv": "f170519998a908902333fa08331dd97bdc9a8ea43ab2d04da65887aca0089335",
+  "raw/interference_scaling.csv": "aa38aca32ff3ec5de8cb4f30b520ba3929458229542f47640701e33ee55fd31f",
+  "raw/sample_size_scaling.csv": "8b594483e5ea870449ea1d5b37cf953a10bc91f383feddd5221aaa4514432f47",
+  "summary/benchmark.csv": "0feed56082dabdef55ad83ae80371b1740a5a8147184168015379a8c5d248425",
+  "summary/doi_sieve.csv": "8c9b615b5ae95837894c75c4dc56d7329f5b7f29313f2bc3274e4f2646d163d9",
+  "summary/exposure_overlap.csv": "793fb90bf73b6f394317d126d802731d5b93f58ad6afd9464549f291983f7564",
+  "summary/interference_scaling.csv": "c0ad952a266f0d7ace67405f2f735eea3f3979be974da6f2e6d31cd38005e80b",
+  "summary/sample_size_scaling.csv": "facc5d54cfe6d5b6a384127027ef956f5344a55a262fc626e352097df9f2e783"
+}

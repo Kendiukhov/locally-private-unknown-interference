@@ -1,0 +1,54 @@
+{
+  "design": {
+    "p_low": 0.2,
+    "p_high": 0.8,
+    "arm_probability": 0.5
+  },
+  "benchmark": {
+    "scenario": "complex",
+    "cluster_count": 200,
+    "cluster_size": 8,
+    "epsilons": [0.25, 0.5, 1.0, 2.0, 4.0],
+    "replications": 800,
+    "population_seed": 1001,
+    "experiment_seed": 2001
+  },
+  "sample_size_scaling": {
+    "scenario": "linear",
+    "cluster_counts": [50, 100, 200, 400],
+    "cluster_size": 8,
+    "epsilons": [0.5, 1.0, 2.0],
+    "replications": 400,
+    "population_seed": 1002,
+    "experiment_seed": 2002
+  },
+  "interference_scaling": {
+    "scenario": "linear",
+    "sample_size": 1600,
+    "cluster_sizes": [4, 8, 16, 32],
+    "epsilons": [0.5, 1.0, 4.0],
+    "replications": 400,
+    "population_seed": 1003,
+    "experiment_seed": 2003
+  },
+  "doi_sieve": {
+    "scenario": "complex",
+    "cluster_count": 200,
+    "cluster_size": 8,
+    "epsilons": [0.5, 1.0, 2.0],
+    "replications": 150,
+    "population_seed": 1001,
+    "experiment_seed": 2004,
+    "penalty": 0.05,
+    "integration_draws": 16
+  },
+  "exposure_overlap": {
+    "sample_size": 100000,
+    "degrees": [0, 2, 4, 6, 8, 10],
+    "peer_treatment_probability": 0.5,
+    "target_mean": 0.6,
+    "epsilons": [0.5, 1.0, 2.0],
+    "replications": 2000,
+    "experiment_seed": 2005
+  }
+}

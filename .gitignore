@@ -1,0 +1,31 @@
+# macOS and external-drive metadata
+.DS_Store
+._*
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+.venv/
+venv/
+
+# Temporary and local development artifacts
+tmp/
+
+# LaTeX intermediates (the release PDF lives under output/pdf)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/main.pdf
+
+# Third-party source PDFs and internal adversarial scratch notes
+references/source_papers/
+research_notes/experiment_redteam.md
+research_notes/theory_redteam.md
+
