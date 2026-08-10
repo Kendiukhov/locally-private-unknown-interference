@@ -23,9 +23,9 @@ paper/*.fls
 paper/*.log
 paper/*.out
 paper/main.pdf
+paper/tmlr_submission.pdf
 
 # Third-party source PDFs and internal adversarial scratch notes
 references/source_papers/
 research_notes/experiment_redteam.md
 research_notes/theory_redteam.md
-

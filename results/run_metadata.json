@@ -106,7 +106,7 @@
     "pyproject.toml": "98a56153058390bceee0192ce1249743e2a6add348b3ca0a2b50eb6444ca77ff",
     "requirements-lock.txt": "5195b8ed5054eb14848ecb55f2741cd8a48f6ce79108ba20b3551fcfbdd9c7d9",
     "scripts/finalize_results.py": "15a012c677d2713f4a822a010881e650a4f1261ed4d997e8c35a5b68e801495a",
-    "scripts/make_figures.py": "713a01af352b4a5029fad11978530fda0221b2df0d1768246e192c401d834351",
+    "scripts/make_figures.py": "04f1d674d17d00d157e8f66cea60208e03216d1fb48178d2b6e4b8c9e82c6e22",
     "scripts/make_tables.py": "c31a545c4f1509d743c4c78783bc032a597c6585182308c1acdb71ae7f2e2e14",
     "scripts/run_doi_experiment.py": "6fd89554b65b004af568debf3814767964d64961c65f3cc5d459c972c82fc245",
     "scripts/run_experiments.py": "004e2352ea7ca060444da86908f6fa56c05f0b1a9d209f484b2bf219a6ed8cad",

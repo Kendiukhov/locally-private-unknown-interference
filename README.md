@@ -108,7 +108,22 @@ bounded_loss_estimates = project_policy_effects(unprojected)
 The unprojected estimator is exactly unbiased. Projection to `[-1, 1]` is for bounded
 squared-error comparisons and sacrifices exact unbiasedness.
 
+## TMLR submission
+
+The separate anonymous TMLR source is [`paper/tmlr_submission.tex`](paper/tmlr_submission.tex),
+with the unmodified official `tmlr.sty`, `tmlr.bst`, and `fancyhdr.sty` files pinned to TMLR
+template commit `7bf90efe3a0debbba703c05c43f3ff7e4d4a2992`. Compile it from `paper/` with:
+
+~~~bash
+latexmk -pdf -interaction=nonstopmode -halt-on-error tmlr_submission.tex
+~~~
+
+The rendered submission PDF is
+[`output/pdf/tmlr_submission_anonymous.pdf`](output/pdf/tmlr_submission_anonymous.pdf).
+
 ## Citation and license
 
 The repository is anonymous for review. Citation metadata are in
-[`CITATION.cff`](CITATION.cff). Code and manuscript sources are released under the MIT License.
+[`CITATION.cff`](CITATION.cff). Software is released under the MIT License. Manuscript sources
+and rendered manuscript PDFs are additionally licensed under CC BY 4.0; see
+[`paper/LICENSE-CC-BY-4.0.md`](paper/LICENSE-CC-BY-4.0.md).

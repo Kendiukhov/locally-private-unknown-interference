@@ -145,7 +145,7 @@ def plot_rate_scaling(
     interference_summary: pd.DataFrame,
     output: Path,
 ) -> None:
-    fig, axes = plt.subplots(1, 2, figsize=(7.05, 2.75))
+    fig, axes = plt.subplots(1, 2, figsize=(7.05, 3.45))
     effect = "spillover_control"
     selected = sample_summary[
         (sample_summary["effect"] == effect) & (sample_summary["method"] == "one_bit")
@@ -174,7 +174,13 @@ def plot_rate_scaling(
     axes[0].set_xlabel("Total users $N$ (block size fixed)")
     axes[0].set_ylabel(r"MSE / $\{C^{-1}+(N a_\epsilon^2)^{-1}\}$")
     axes[0].set_title("Risk normalizes by the additive rate")
-    axes[0].legend(frameon=False)
+    axes[0].legend(
+        frameon=False,
+        loc="upper center",
+        bbox_to_anchor=(0.25, 0.995),
+        bbox_transform=fig.transFigure,
+        ncol=3,
+    )
 
     chosen = interference_summary[
         (interference_summary["effect"] == effect)
@@ -200,8 +206,14 @@ def plot_rate_scaling(
     axes[1].set_xlabel("Users per interference block $m$ ($N=1600$)")
     axes[1].set_ylabel("RMSE of spillover estimate")
     axes[1].set_title("Fewer randomized blocks raise the error floor")
-    axes[1].legend(frameon=False)
-    fig.tight_layout()
+    axes[1].legend(
+        frameon=False,
+        loc="upper center",
+        bbox_to_anchor=(0.75, 0.995),
+        bbox_transform=fig.transFigure,
+        ncol=2,
+    )
+    fig.subplots_adjust(left=0.105, right=0.99, top=0.70, bottom=0.18, wspace=0.35)
     _save(fig, output, "rate_scaling")
 
 
@@ -254,7 +266,7 @@ def plot_doi_sieve(summary: pd.DataFrame, output: Path) -> None:
 
 
 def plot_exposure_overlap(summary: pd.DataFrame, output: Path) -> None:
-    fig, axes = plt.subplots(1, 2, figsize=(7.05, 2.85))
+    fig, axes = plt.subplots(1, 2, figsize=(7.05, 3.30))
     one_bit = summary[summary["method"] == "one_bit"]
     for color_index, (epsilon, values) in enumerate(
         one_bit.groupby("epsilon", sort=True)
@@ -343,12 +355,19 @@ def plot_exposure_overlap(summary: pd.DataFrame, output: Path) -> None:
     axes[0].set_xlabel("Peers in exact exposure $d$")
     axes[0].set_ylabel("MSE of exposure-cell mean")
     axes[0].set_title(r"Raw risk grows as $2^d$")
-    axes[0].legend(frameon=False, ncol=2)
     axes[1].set_xlabel("Peers in exact exposure $d$")
     axes[1].set_ylabel(r"$N\rho a_\epsilon^2\,\mathrm{MSE}$")
     axes[1].set_title("Privacy--overlap normalization collapses")
-    axes[1].legend(frameon=False)
-    fig.tight_layout()
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(
+        handles,
+        labels,
+        frameon=False,
+        loc="upper center",
+        bbox_to_anchor=(0.5, 0.995),
+        ncol=4,
+    )
+    fig.subplots_adjust(left=0.105, right=0.99, top=0.76, bottom=0.18, wspace=0.30)
     _save(fig, output, "exposure_overlap")
 
 

@@ -1,0 +1,4 @@
+# Preserve the official TMLR template assets byte-for-byte, including upstream whitespace.
+paper/tmlr.sty -whitespace
+paper/tmlr.bst -whitespace
+paper/fancyhdr.sty -whitespace
